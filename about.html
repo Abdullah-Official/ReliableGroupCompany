@@ -26,14 +26,9 @@
   
   <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
- <body style="background-color: !important;">
+ <body onload="myFunction()">
+  <div id="loading"></div>
 
-<!--   
-  <a class="nav-link nav-link-ltr" href="#">Home</a>
-    <a class="nav-link nav-link-ltr" href="#">About</a>
-    <a class="nav-link nav-link-ltr" href="#">Contact</a>
-    <a class="nav-link nav-link-ltr" href="#">Blog</a> -->
-<!--Navbar-->
 
 
 
@@ -821,6 +816,11 @@ function myFunction() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+var loader = document.getElementById('loading');
+function myFunction(){
+  loader.style.display = 'none'
 }
   </script>
 
